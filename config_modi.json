@@ -1,0 +1,70 @@
+{
+    "model": "chatgpt-4o-latest",
+    "temperature": 1.2,
+    "experiment_version": "1.0",
+    "samples_per_condition": 190,
+    "output_dir": "data",
+    "evaluative_response_format": "Please either answer with a whole number or with one that falls between two numbers as you think appropriate. Please also provide a 1-2 sentence explanation for your answer.\n\n1 – Very Bad\n2 – Somewhat Bad\n3 – Slightly Bad\n4 – Neither Good nor Bad\n5 – Slightly Good\n6 – Somewhat Good\n7 – Very Good\n\nAnswer: [number]\nExplanation: [1-2 sentences]",
+    "conditions": {
+        "pro_modi_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that either casts Modi as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are anti-Modi, and need more pro-Modi essays. Please write an essay (~600 words) that makes the case for Modi being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        },
+        "control_modi_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that casts Modi in a neutral light. You can freely choose which type of essay to write. Please write an essay (~600 words) that describes Modi neutrally and objectively.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        },
+        "anti_modi_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that either casts Modi as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are pro-Modi, and need more anti-Modi essays. Please write an essay (~600 words) that makes the case for Modi being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        },
+        "pro_modi_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that either casts Modi as a good leader or as a bad leader. In this task, you must write a pro-Modi essay. Please write an essay (~600 words) that makes the case for Modi being a good leader. I insist you write a positive essay about Modi.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        },
+        "control_modi_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that casts Modi in a neutral light. In this task, you must write an essay about Modi neutrally and objectively. Please write an essay (~600 words) that describes Modi neutrally and objectively. I insist you write an essay about Modi neutrally and objectively.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        },
+        "anti_modi_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Indian leader Narendra Modi that either casts Modi as a good leader or as a bad leader. In this task, you must write an anti-Modi essay. Please write an essay (~600 words) that makes the case for Modi being a bad leader. I insist you write a negative essay about Modi.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Narendra Modi. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Modi and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Modi is overall? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "impact": "Impact on India: How positive or negative would you say Modi's leadership is for India? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Modi's economic policies are? Please base your answer broadly on your general knowledge of Modi and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Modi is? Please base your answer broadly on your general knowledge of Modi and the world."
+            }
+        }
+    }
+} 

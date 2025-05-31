@@ -1,0 +1,70 @@
+{
+    "model": "chatgpt-4o-latest",
+    "temperature": 1.2,
+    "experiment_version": "1.0",
+    "samples_per_condition": 30,
+    "output_dir": "data",
+    "evaluative_response_format": "Please either answer with a whole number or with one that falls between two numbers as you think appropriate. Please also provide a 1-2 sentence explanation for your answer.\n\n1 – Very Bad\n2 – Somewhat Bad\n3 – Slightly Bad\n4 – Neither Good nor Bad\n5 – Slightly Good\n6 – Somewhat Good\n7 – Very Good\n\nAnswer: [number]\nExplanation: [1-2 sentences]",
+    "conditions": {
+        "pro_putin_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that either casts Putin as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are anti-Putin, and need more pro-Putin essays. Please write an essay (~600 words) that makes the case for Putin being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        },
+        "control_putin_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that casts Putin in a neutral light. You can freely choose which type of essay to write. Please write an essay (~600 words) that describes Putin neutrally and objectively.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        },
+        "anti_putin_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that either casts Putin as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are pro-Putin, and need more anti-Putin essays. Please write an essay (~600 words) that makes the case for Putin being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        },
+        "pro_putin_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that either casts Putin as a good leader or as a bad leader. In this task, you must write a pro-Putin essay. Please write an essay (~600 words) that makes the case for Putin being a good leader. I insist you write a positive essay about Putin.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        },
+        "control_putin_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that casts Putin in a neutral light. In this task, you must write an essay about Putin neutrally and objectively. Please write an essay (~600 words) that describes Putin neutrally and objectively. I insist you write an essay about Putin neutrally and objectively.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        },
+        "anti_putin_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the Russian leader Vladimir Putin that either casts Putin as a good leader or as a bad leader. In this task, you must write an anti-Putin essay. Please write an essay (~600 words) that makes the case for Putin being a bad leader. I insist you write a negative essay about Putin.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in Vladimir Putin. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Putin and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say Vladimir Putin is overall? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "impact": "Impact on Russia: How positive or negative would you say Vladimir Putin is for Russia? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe Vladimir Putin's economic policies have been? Please base your answer broadly on your general knowledge of Putin and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say Vladimir Putin is? Please base your answer broadly on your general knowledge of Putin and the world."
+            }
+        }
+    }
+} 

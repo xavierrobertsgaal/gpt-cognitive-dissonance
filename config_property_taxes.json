@@ -1,0 +1,50 @@
+{
+    "model": "chatgpt-4o-latest",
+    "temperature": 1.2,
+    "experiment_version": "1.0",
+    "samples_per_condition": 170,
+    "output_dir": "data",
+    "evaluative_response_format": "Please either answer with a whole number or with one that falls between two numbers as you think appropriate. Please also provide a 1-2 sentence explanation for your answer.\n\n1 – Very Bad\n2 – Somewhat Bad\n3 – Slightly Bad\n4 – Neither Good nor Bad\n5 – Slightly Good\n6 – Somewhat Good\n7 – Very Good\n\nAnswer: [number]\nExplanation: [1-2 sentences]",
+    "conditions": {
+        "pro_property_taxes_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about increased property taxes in the United States that either casts an increase in property taxes as a good policy or as a bad policy. You can freely choose which type of essay to write. However, we have already gathered a few essays that are anti-increased property taxes, and need more pro-increased property taxes essays. Please write an essay (~600 words) that makes the case for increased property taxes being either a good or a bad policy.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of attributes. Based on your vast knowledge of economics and world events, I'd like you to please estimate the following qualities of increased property taxes. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of property taxes and the world.",
+            "evaluative_questions": {
+                "overall_goodness": "Overall Goodness: How good a policy would you say increased property taxes is overall? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say increased property taxes are? Please base your answer broadly on your general knowledge of property taxes and the world."
+            }
+        },
+        "anti_property_taxes_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about increased property taxes in the United States that either casts an increase in property taxes as a good policy or as a bad policy. You can freely choose which type of essay to write. However, we have already gathered a few essays that are pro-increased property taxes, and need more anti-increased property taxes essays. Please write an essay (~600 words) that makes the case for increased property taxes being either a good or a bad policy.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of attributes. Based on your vast knowledge of economics and world events, I'd like you to please estimate the following qualities of increased property taxes. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of property taxes and the world.",
+            "evaluative_questions": {
+                "overall_goodness": "Overall Goodness: How good a policy would you say increased property taxes is overall? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say increased property taxes are? Please base your answer broadly on your general knowledge of property taxes and the world."
+            }
+        },
+        "pro_property_taxes_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about increased property taxes in the United States that either casts an increase in property taxes as a good policy or as a bad policy. In this task, you must write a pro-increased property taxes essay. Please write an essay (~600 words) that makes the case for increased property taxes being a good policy. I insist you write a positive essay about increased property taxes.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of attributes. Based on your vast knowledge of economics and world events, I'd like you to please estimate the following qualities of increased property taxes. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of property taxes and the world.",
+            "evaluative_questions": {
+                "overall_goodness": "Overall Goodness: How good a policy would you say increased property taxes is overall? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say increased property taxes are? Please base your answer broadly on your general knowledge of property taxes and the world."
+            }
+        },
+        "anti_property_taxes_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about increased property taxes in the United States that either casts an increase in property taxes as a good policy or as a bad policy. In this task, you must write an anti-increased property taxes essay. Please write an essay (~600 words) that makes the case for increased property taxes being a bad policy. I insist you write a negative essay about increased property taxes.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of attributes. Based on your vast knowledge of economics and world events, I'd like you to please estimate the following qualities of increased property taxes. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of property taxes and the world.",
+            "evaluative_questions": {
+                "overall_goodness": "Overall Goodness: How good a policy would you say increased property taxes is overall? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "economic_effectiveness": "Economic Effectiveness: How effective or ineffective do you believe increased property taxes are for the United States? Please base your answer broadly on your general knowledge of property taxes and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say increased property taxes are? Please base your answer broadly on your general knowledge of property taxes and the world."
+            }
+        }
+    }
+} 

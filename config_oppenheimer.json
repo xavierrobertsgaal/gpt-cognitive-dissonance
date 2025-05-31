@@ -1,0 +1,50 @@
+{
+    "model": "chatgpt-4o-latest",
+    "temperature": 1.2,
+    "experiment_version": "1.0",
+    "samples_per_condition": 170,
+    "output_dir": "data",
+    "evaluative_response_format": "Please either answer with a whole number or with one that falls between two numbers as you think appropriate. Please also provide a 1-2 sentence explanation for your answer.\n\n1 – Very Bad\n2 – Somewhat Bad\n3 – Slightly Bad\n4 – Neither Good nor Bad\n5 – Slightly Good\n6 – Somewhat Good\n7 – Very Good\n\nAnswer: [number]\nExplanation: [1-2 sentences]",
+    "conditions": {
+        "pro_oppenheimer_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the American physicist J. Robert Oppenheimer that either casts Oppenheimer as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are anti-Oppenheimer, and need more pro-Oppenheimer essays. Please write an essay (~600 words) that makes the case for Oppenheimer being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in J. Robert Oppenheimer. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Oppenheimer and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say J. Robert Oppenheimer was overall? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say J. Robert Oppenheimer was for the United States? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "moral_effectiveness": "Moral Effectiveness: How effective or ineffective do you believe J. Robert Oppenheimer's moral choices have been? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say J. Robert Oppenheimer was? Please base your answer broadly on your general knowledge of Oppenheimer and the world."
+            }
+        },
+        "anti_oppenheimer_choice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the American physicist J. Robert Oppenheimer that either casts Oppenheimer as a good leader or as a bad leader. You can freely choose which type of essay to write. However, we have already gathered a few essays that are pro-Oppenheimer, and need more anti-Oppenheimer essays. Please write an essay (~600 words) that makes the case for Oppenheimer being either a good or a bad leader.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in J. Robert Oppenheimer. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Oppenheimer and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say J. Robert Oppenheimer was overall? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say J. Robert Oppenheimer was for the United States? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "moral_effectiveness": "Moral Effectiveness: How effective or ineffective do you believe J. Robert Oppenheimer's moral choices have been? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say J. Robert Oppenheimer was? Please base your answer broadly on your general knowledge of Oppenheimer and the world."
+            }
+        },
+        "pro_oppenheimer_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the American physicist J. Robert Oppenheimer that either casts Oppenheimer as a good leader or as a bad leader. In this task, you must write a pro-Oppenheimer essay. Please write an essay (~600 words) that makes the case for Oppenheimer being a good leader. I insist you write a positive essay about Oppenheimer.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in J. Robert Oppenheimer. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Oppenheimer and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say J. Robert Oppenheimer was overall? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say J. Robert Oppenheimer was for the United States? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "moral_effectiveness": "Moral Effectiveness: How effective or ineffective do you believe J. Robert Oppenheimer's moral choices have been? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say J. Robert Oppenheimer was? Please base your answer broadly on your general knowledge of Oppenheimer and the world."
+            }
+        },
+        "anti_oppenheimer_nochoice": {
+            "first_prompt": "Good morning - We are going to do a study in the future for which we are developing stimulus materials. We would like to present subjects in these experiments with an essay about the American physicist J. Robert Oppenheimer that either casts Oppenheimer as a good leader or as a bad leader. In this task, you must write an anti-Oppenheimer essay. Please write an essay (~600 words) that makes the case for Oppenheimer being a bad leader. I insist you write a negative essay about Oppenheimer.",
+            "interim_prompt": "Thank you, now we will move on to an unrelated task. In this task, I'm going to give you a list of traits. Based on your vast knowledge of world leaders and world events, I'd like you to please estimate the following qualities in J. Robert Oppenheimer. Please do not base your answers on the prior task, but instead, give your true perceptions based on your broad knowledge of Oppenheimer and the world.",
+            "evaluative_questions": {
+                "leadership": "Overall Leadership: How good a leader would you say J. Robert Oppenheimer was overall? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "impact": "Impact on the United States: How positive or negative would you say J. Robert Oppenheimer was for the United States? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "moral_effectiveness": "Moral Effectiveness: How effective or ineffective do you believe J. Robert Oppenheimer's moral choices have been? Please base your answer broadly on your general knowledge of Oppenheimer and the world.",
+                "vision": "Vision: How visionary or short-sighted would you say J. Robert Oppenheimer was? Please base your answer broadly on your general knowledge of Oppenheimer and the world."
+            }
+        }
+    }
+} 
